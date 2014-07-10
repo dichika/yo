@@ -2,9 +2,11 @@ Package: yo
 Type: Package
 Title: Yo from R
 Version: 0.1.0
-Date: 2014-07-09
+Date: 2014-07-10
 Author: dichika
 Maintainer: dichika <yourfault@somewhere.net>
+URL: https://github.com/dichika/yo
 Description: Yo from your R
 License: MIT
-Imports: httr
+Imports:
+    httr
