@@ -2,12 +2,12 @@
 #'
 #'\code{yo} yo all subscriber or a specific subscriber. 
 #'
-#'Before yo(), you need your API key. Please visit http://yoapi.justyo.co/.
+#'Before yo(), you need your API key. Please visit http://yoapi.justyo.co/
 #'
 #'@param apitoken Your Yo API token
 #'@param username Username who you want
 #'  
-#'  
+#'@importFrom httr POST
 #'@return status code and status message
 #'  
 #' @examples
@@ -19,7 +19,6 @@
 #' }
 #'@export
 yo <- function(apitoken=NULL, username=NULL){
-  require(httr)
   if(is.null(apitoken)){
     stop("apitoken is needed.")
   }

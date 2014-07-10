@@ -17,7 +17,7 @@ status code and status message
 \code{yo} yo all subscriber or a specific subscriber.
 }
 \details{
-Before yo(), you need your API key. Please visit http://yoapi.justyo.co/.
+Before yo(), you need your API key. Please visit http://yoapi.justyo.co/
 }
 \examples{
 \dontrun{
