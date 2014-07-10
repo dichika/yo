@@ -1,12 +1,15 @@
 Package: yo
 Type: Package
-Title: yo: Send push notifications using Yo
-Version: 0.1.1
+Title: Send Push Notifications using YoApp
+Version: 0.1.2
 Date: 2014-07-10
 Author: Tokorosawa Yoshio
 Maintainer: Daisuke Ichikawa <ichikawadaisuke@gmail.com>
 URL: https://github.com/dichika/yo
-Description: A package for sending push notifications using Yo
+Description: This package provides programmatic access to the
+Yo API. Yo is a social application for iOS, Android, and Windows
+Phone. This allows R users to push message with audio notification
+from R to your Smartphone.
 License: MIT + file LICENSE
 Imports:
     httr
