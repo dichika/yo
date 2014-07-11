@@ -7,9 +7,9 @@ Author: Tokorosawa Yoshio
 Maintainer: Daisuke Ichikawa <ichikawadaisuke@gmail.com>
 URL: https://github.com/dichika/yo
 Description: This package provides programmatic access to the
-Yo API. Yo is a social application for iOS, Android, and Windows
-Phone. This allows R users to push message with audio notification
-from R to your Smartphone.
+    Yo API. Yo is a social application for iOS, Android, and Windows
+    Phone. This allows R users to push message with audio notification
+    from R to your Smartphone.
 License: MIT + file LICENSE
 Imports:
     httr
