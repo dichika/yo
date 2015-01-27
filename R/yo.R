@@ -13,9 +13,9 @@
 #' @examples
 #' \dontrun{
 #' # Yo all subscriber.
-#' beep("Your API token")
+#' yo("Your API token")
 #' # Yo a specific subscriber
-#' beep("Your API token", "username")
+#' yo("Your API token", "username")
 #' }
 #'@export
 yo <- function(apitoken=NULL, username=NULL){
@@ -34,4 +34,21 @@ yo <- function(apitoken=NULL, username=NULL){
   }
   res_message <- paste(collapse=" ",res$headers$status, res$headers$statusmessage)
   return(res_message)
+}
+
+#' @examples
+#' \dontrun{
+#' # connpass event
+#' # e.g.) http://zokupata.connpass.com/event/9804/
+#' event2yo(9804, "USERNAME", options()$YO_KEY)
+#' }
+#' @export
+connpass2yo <- function(event_id, to, apikey){
+  require("connpass")
+  require("yo")
+  res <- getInfo(event_id)
+  count <- res$events$limit - res$events$accepted
+  for(i in seq(count)){
+    yo(apikey, to)      
+  }
 }
