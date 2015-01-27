@@ -36,6 +36,16 @@ yo <- function(apitoken=NULL, username=NULL){
   return(res_message)
 }
 
+#'Connpass2Yo
+#'
+#'\code{yo} yo all subscriber or a specific subscriber. 
+#'
+#'Before yo(), you need your API key. Please visit http://yoapi.justyo.co/
+#'
+#'@param event_id Connpass event_id
+#'@param apitoken Your Yo API token
+#'@param to Username who you want
+#'  
 #' @examples
 #' \dontrun{
 #' # connpass event
